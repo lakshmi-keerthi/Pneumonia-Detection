@@ -83,7 +83,7 @@ tensorboard-data-server==0.7.2
 tensorflow
 tensorflow-cpu
 tensorflow-io-gcs-filesystem==0.31.0
-tensorflow_intel==2.18.0
+tensorflow_intel
 termcolor==2.5.0
 threadpoolctl==3.5.0
 tiktoken==0.5.2
@@ -103,3 +103,4 @@ wrapt==1.16.0
 xgboost==2.1.2
 xxhash==3.4.1
 yarl==1.9.4
+
