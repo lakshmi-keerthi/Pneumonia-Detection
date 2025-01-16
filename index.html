@@ -7,16 +7,27 @@
 <body>
     <div class="container mt-5">
         <h1 class="text-center mb-4">Pneumonia Detection</h1>
-        <form action="/predict" method="post" enctype="multipart/form-data">
+        <form action="/classify" method="post" enctype="multipart/form-data">
             <div class="form-group">
-                <label for="file">Upload an image:</label>
-                <input type="file" class="form-control-file" id="file" name="file">
+                <label for="image">Upload an X-ray image:</label>
+                <input type="file" class="form-control-file" id="image" name="image" required>
             </div>
             <div class="form-group">
-                <button type="submit" class="btn btn-primary">Submit</button>
+                <button type="submit" class="btn btn-primary" id="submit-btn" disabled>Submit</button>
             </div>
         </form>
     </div>
+    <script>
+        const fileInput = document.getElementById('image');
+        const submitBtn = document.getElementById('submit-btn');
+
+        fileInput.addEventListener('change', () => {
+            if (fileInput.files.length > 0) {
+                submitBtn.disabled = false;
+            } else {
+                submitBtn.disabled = true;
+            }
+        });
+    </script>
 </body>
 </html>
-
