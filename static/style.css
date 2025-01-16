@@ -1,0 +1,28 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+h1 {
+    text-align: center;
+}
+
+#upload-container {
+    text-align: center;
+    margin-top: 50px;
+}
+
+#uploaded-image {
+    max-width: 500px;
+    max-height: 500px;
+    margin-top: 20px;
+}
+
+#result-container {
+    margin-top: 50px;
+    text-align: center;
+}
+
+#result-text {
+    font-size: 18px;
+    font-weight: bold;
+}
