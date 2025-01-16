@@ -1,5 +1,6 @@
 ## Live Application
-The Flask application is live at TBD
+The Flask application is live at https://pneumonia-detection-ri18.onrender.com
+Processing time is too high as only trail version of Render is used. 
 
 ## How to Deploy Locally
 1. Clone the repository.
